@@ -1,68 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fb;
+  color: #222;
 }
 
-.navbar{
-    background-color: #222;
-    padding: 20px 10px;
-    display: flex;
-    justify-content: space-between;
+/* Navbar */
+nav {
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
 }
 
-.navbar .logo a,
-.navbar .nav-item a{
-    color: #fff;
-    text-decoration: none;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.nav-item a{
-    margin-right: 20px;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-
-.hero, .courses, .about, .contact{
-    width: 80%;
-    margin: 30px auto;
-    padding: 30px;
-    border: 1px solid black;
+.nav-links a:hover {
+  color: #facc15;
 }
 
-.hero h2{
-    color: #333;
-    margin-bottom: 10px;
-}
-.hero p{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.hero a{
-    background-color: #222;
-    padding: 10px 15px;
-    color: #fff;
-    text-decoration: none;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #2563eb;
+  color: white;
 }
 
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: white;
+  color: #2563eb;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #facc15;
+  color: black;
+}
+
+/* Sections */
+section {
+  padding: 70px 10%;
+}
+
+.about {
+  text-align: center;
+  background: white;
+}
+
+.about h2,
+.contact h2,
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
 /* Courses */
-
-
-.courses .course{
-    background-color: #eee;
-    border: 2px solid #333;
-    margin: 15px 0;
-    padding: 20px;
+.section-title {
+  text-align: center;
 }
 
-.footer{
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 30px;
+.course-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background: #1e3a8a;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
 }
