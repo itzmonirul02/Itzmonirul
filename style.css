@@ -1,35 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Navbar */
 nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 180px;
-  height: 100vh;
   background: #1e3a8a;
-  padding: 40px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
 }
 
 .logo {
-  color: white;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .nav-links {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
+  color: #facc15;
+}
+
+/* All sections */
+section {
+  padding: 70px 10%;
+}
+
+/* Home */
+.hero {
+  text-align: center;
+  background: #2563eb;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
   background: white;
-  color: #1e3a8a;
-  border-radius: 8px;
+  color: #2563eb;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  text-align: center;
+  background: white;
+}
+
+.about h2,
+.contact h2,
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Courses */
+#courses {
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background: #1e3a8a;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
 }
