@@ -1,98 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Website - Home</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon">
-
-    <!-- Google Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itzmonirul | Student Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">Student Website</a>
-            </div>
-            <div class="nav-item">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="courses.html">Courses</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Itzmonirul</div>
 
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-        <!-- Hero Section -->
-        <div class="hero">
-            <h2>Welcome to My Website</h2>
-            <p>
-                This is my first CSS Project. I am learning HTML and CSS Step by step.
-            </p>
-            <a href="">Learn More</a>
-        </div>
+  <!-- Home -->
+  <section id="home" class="hero">
+    <h1>Welcome to My Website 👋</h1>
+    <p>This is my personal website. I am learning HTML, CSS and JavaScript step by step.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
 
-    </header>
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <strong>Itzmonirul</strong>.
+      I am a student and I am learning web development.
+    </p>
+  </section>
 
-    <!-- Main -->
-    <main>
-        <!-- About -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! My name is Lincoln. I am a student and I am learning web development.
-            </p>
-        </section>
+  <!-- Courses -->
+  <section id="courses">
+    <h2 class="section-title">My Courses</h2>
 
-        <!-- Courses -->
-        <section class="courses">
-            <h2>Courses</h2>
+    <div class="course-container">
 
-            <div class="course">
-                <h3>HTML</h3>
-                <p>Learn the structure of websites.</p>
-            </div>
-            <div class="course">
-                <h3>CSS</h3>
-                <p>Learn how to design websites.</p>
-            </div>
-            <div class="course">
-                <h3>JavaScript</h3>
-                <p>Learn how to make websites interactive.</p>
-            </div>
+      <div class="card">
+        <h3>HTML</h3>
+        <p>Learn the structure of websites and build web pages.</p>
+      </div>
 
-        </section>
+      <div class="card">
+        <h3>CSS</h3>
+        <p>Learn how to design beautiful and modern websites.</p>
+      </div>
 
-        <!-- Contact -->
-         <section class="contact">
-            <h2>Contact Me</h2>
-            <p>Email: lincoln@example.com</p>
-            <p>Phone: 01700000000</p>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Learn how to make websites interactive and dynamic.</p>
+      </div>
 
-         </section>
+    </div>
+  </section>
 
-    </main>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: itzmonirul0.2@email.com</p>
+    <p>📱 Phone: 01336141281</p>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Student Website</p>
-    </footer>
-
-
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Itzmonirul | All Rights Reserved</p>
+  </footer>
 
 </body>
-
 </html>
